@@ -1,12 +1,11 @@
 package org.bitnick.example.challenge.fizzbuzz;
 
 public class Fizzbuzz {
-	
-	public String fizzbuzz(Integer number) {
+	public String fizzbuzz(int number) {
 		StringBuilder sb = new StringBuilder();
 		
-		Boolean isDivisbleBy3 = (number % 3 == 0);
-		Boolean isDivisbleBy5 = (number % 5 == 0);
+		boolean isDivisbleBy3 = (number % 3 == 0);
+		boolean isDivisbleBy5 = (number % 5 == 0);
 		
 		if (!isDivisbleBy3 && !isDivisbleBy5) {
 			sb.append(number);
