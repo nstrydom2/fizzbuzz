@@ -11,12 +11,12 @@ public class FizzbuzzTest {
 	private final Fizzbuzz fizzbuzzTest = new Fizzbuzz();
 	
 	@Test
-	public void returnsNumericalString() throws Exception {
+	public void returnsNumericalString() {
 		Assert.assertEquals("1", fizzbuzzTest.fizzbuzz(1));
 	}
 	
 	@Test
-	public void returnsFizzIfDivisbleBy3() throws Exception {
+	public void returnsFizzIfDivisbleBy3() {
 		Assert.assertEquals("Fizz", fizzbuzzTest.fizzbuzz(3));
 		Assert.assertEquals("Fizz", fizzbuzzTest.fizzbuzz(6));
 		Assert.assertEquals("Fizz", fizzbuzzTest.fizzbuzz(9));
@@ -24,7 +24,7 @@ public class FizzbuzzTest {
 	}
 	
 	@Test
-	public void returnsBuzzIfDivisbleBy5() throws Exception {
+	public void returnsBuzzIfDivisbleBy5() {
 		Assert.assertEquals("Buzz", fizzbuzzTest.fizzbuzz(5));
 		Assert.assertEquals("Buzz", fizzbuzzTest.fizzbuzz(10));
 		Assert.assertEquals("Buzz", fizzbuzzTest.fizzbuzz(20));
@@ -32,15 +32,14 @@ public class FizzbuzzTest {
 	}
 	
 	@Test
-	public void returnsFizzBuzzIfDivisbleBy3and5() throws Exception {
+	public void returnsFizzBuzzIfDivisbleBy3and5() {
 		Assert.assertEquals("FizzBuzz", fizzbuzzTest.fizzbuzz(15));
 		Assert.assertEquals("FizzBuzz", fizzbuzzTest.fizzbuzz(30));
-		Assert.assertEquals("FizzBuzz", fizzbuzzTest.fizzbuzz(45));
-		Assert.assertEquals("FizzBuzz", fizzbuzzTest.fizzbuzz(60));
+
 	}
 	
 	@Test
-	public void runtimeTest() throws Exception {
+	public void runtimeTest() {
 		for (int counter = 1; counter <=100; counter++) {
 			System.out.println(fizzbuzzTest.fizzbuzz(counter));
 		}
